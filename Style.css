@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.topbar{
+    padding-top: 15px;
+    /*border-bottom: 1px solid rgb(81, 79, 79);*/
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom: 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 120px;
+    background-color: rgb(242, 185, 80);
+}
+.topbar-navigation{
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+.topbar-navigation a{
+    text-decoration: none;
+    margin: 0 20px;
+    color: rgb(93, 66, 119);
+    font-size: 15px;
+    transition: 0.3s;
+    white-space: nowrap;
+    line-height: 1.5;
+}
+.topbar-navigation a:hover{
+    color:rgb(116, 10, 214);
+}
+.Sociaux a{
+    margin: 0 10px;
+    opacity:0.4;
+    transition: 0.3s;
+}
+.Sociaux a:hover{
+    opacity: 1;
+}
+.container{
+    margin: 10px;
+    text-align: center;
+    padding-top: 120px;
+    z-index: 1;
+}
+.main .titre{
+    color:rgb(93, 66, 119) ;
+    font-family: sans-serif;
+}
+.main{
+    color:rgb(8, 8, 36);
+    margin: 20px;
+}
+.main .texte{
+    color:rgb(93, 66, 119);
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.main .bienvenue{
+    font-size: 35px;
+    font-weight: lighter;
+    font-style: italic;
+    color:rgb(242, 185, 80) ;
+}
+.aside{
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.aside img{
+    border-radius: 10px;
+    border: 2px solid rgb(242, 185, 80);
+    box-shadow: 1px 1px 4px 4px rgb(93, 66, 119);
+}
+.aside .button{
+    border: none;
+    border-radius: 10px;
+    background-color:rgb(242, 185, 80) ;
+    margin-top: 10px;
+    padding: 10px;
+}
+.aside .button:hover{
+    transform: scale(1.1);
+    transition: .3s;
+    box-shadow: 1px 1px 4px 4px rgb(93, 66, 119);
+}
+.aside .button a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.footer{
+    text-align: center;
+    padding:10px;
+}
+.footer a{
+    color:rgb(93, 66, 119);
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 10px;
+}
+.footer a:hover{
+    color:rgb(116, 10, 214) ;
+}
+@media only screen and (min-width:1100px) {
+    .topbar{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+    }
+    .topbar-navigation a{
+        font-size: 20px;
+    }
+    .topbar-navigation a:hover, .actif{
+        border: 1px solid rgb(116, 10, 214);
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .Sociaux{
+        margin-top: 10px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .aside{
+        margin-top:80px;
+    }
+    .Sociaux{
+        margin-right: 20px;
+        margin-bottom:10px;
+    }
+    .main{
+        margin-top: 60px;
+    }
+}

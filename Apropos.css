@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.topbar{
+    padding-top: 15px;
+    /*border-bottom: 1px solid rgb(81, 79, 79);*/
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom: 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 120px;
+    background-color: rgb(242, 185, 80);
+}
+.topbar-navigation{
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+.topbar-navigation a{
+    text-decoration: none;
+    margin: 0 20px;
+    color: rgb(93, 66, 119);
+    font-size: 15px;
+    transition: 0.3s;
+    white-space: nowrap;
+    line-height: 1.5;
+}
+.topbar-navigation a:hover{
+    color:rgb(116, 10, 214);
+}
+.Sociaux a{
+    margin: 0 10px;
+    opacity:0.4;
+    transition: 0.3s;
+}
+.Sociaux a:hover{
+    opacity: 1;
+}
+.container{
+    margin: 50px;
+    text-align: center;
+    padding-top: 120px;
+    z-index: 1;
+    font-family: sans-serif;
+    color: rgb(93, 66, 119);
+}
+.main img{
+    border-radius: 50%;
+
+}
+.aside h1{
+    color:rgb(116, 10, 214) ;
+}
+.aside p{
+    line-height: 1.5;
+    font-size: 20px;
+}
+ button{
+    padding: 5px;
+    background-color: rgb(242, 185, 80);
+    border: none;
+    border-radius: 5px;
+}
+button a{
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+}
+button:hover{
+    box-shadow: 1px 1px 4px 4px rgb(93, 66, 119);
+    transition: .3s;
+    transform: scale(1.1);
+}
+.footer{
+    text-align: center;
+    padding:10px;
+}
+.footer a{
+    color:rgb(93, 66, 119);
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 10px;
+}
+.footer a:hover{
+    color:rgb(116, 10, 214) ;
+}
+@media only screen and (min-width:1100px) {
+    .topbar{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+    }
+    .topbar-navigation a{
+        font-size: 20px;
+    }
+    .topbar-navigation a:hover, .actif{
+        border: 1px solid rgb(116, 10, 214);
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .Sociaux{
+        margin-top: 10px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+        gap: 80px;
+    }
+    .main {
+        margin-top: 90px;
+    }
+    .aside{
+        padding: 20px;
+    }
+}
